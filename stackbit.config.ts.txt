@@ -1,0 +1,18 @@
+// stackbit.config.ts
+import { defineConfig } from '@stackbit/types';
+
+export default defineConfig({
+    stackbitVersion: '~0.5.0',
+    ssgName: 'custom',
+    nodeVersion: '16',
+    contentSources: [],
+    models: [],
+    pagesDir: '.',
+    dataDir: '.',
+    assets: {
+        referenceType: 'static',
+        staticDir: '.',
+        uploadDir: 'assets',
+        publicPath: '/'
+    }
+});
