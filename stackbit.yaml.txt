@@ -1,0 +1,7 @@
+# stackbit.yaml
+stackbitVersion: ~0.5.0
+ssgName: custom
+staticDir: .
+buildCommand: 
+pagesDir: .
+dataDir: .
