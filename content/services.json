@@ -1,0 +1,12 @@
+{
+  "items": [
+    {
+      "name": "Individual Therapy (50 min)",
+      "description": "Online or in-person. We focus on your goals using evidence-based methods."
+    },
+    {
+      "name": "Intake (90 min)",
+      "description": "A deeper first session to map your history, needs, and plan."
+    }
+  ]
+}

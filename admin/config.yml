@@ -1,0 +1,53 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+publish_mode: editorial_workflow
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "content/home.json"
+        label: "Home"
+        name: "home"
+        fields:
+          - { label: "Hero Heading", name: "heading", widget: "string" }
+          - { label: "Hero Subheading", name: "subheading", widget: "text", required: false }
+          - { label: "Intro Paragraph", name: "intro", widget: "text" }
+          - { label: "Hero Image", name: "hero_image", widget: "image", required: false }
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "list"
+            fields:
+              - { label: "Quote", name: "quote", widget: "text" }
+              - { label: "Attribution", name: "name", widget: "string", required: false }
+      - file: "content/about.json"
+        label: "About"
+        name: "about"
+        fields:
+          - { label: "Headline", name: "headline", widget: "string" }
+          - { label: "Bio", name: "bio", widget: "markdown" }
+          - { label: "Portrait", name: "portrait", widget: "image", required: false }
+      - file: "content/services.json"
+        label: "Services"
+        name: "services"
+        fields:
+          - label: "Service Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Description", name: "description", widget: "markdown" }
+              - { label: "Price (optional)", name: "price", widget: "string", required: false }
+  - name: "contactinfo"
+    label: "Contact & Practice Info"
+    file: "content/contact.json"
+    fields:
+      - { label: "Practice Name", name: "practice_name", widget: "string" }
+      - { label: "Address", name: "address", widget: "string" }
+      - { label: "Email", name: "email", widget: "string" }
+      - { label: "Phone", name: "phone", widget: "string", required: false }
