@@ -6,13 +6,76 @@ media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 
 collections:
+  # Pages Collection - for all your main pages
   - name: "pages"
     label: "Pages"
     files:
+      # HOME PAGE
       - name: "home"
         label: "Home Page"
         file: "content/home.json"
         fields:
-          - { label: "Hero Heading", name: "heading", widget: "string" }
-          - { label: "Hero Subheading", name: "subheading", widget: "string", required: false }
-          - { label: "Hero Image", name: "hero_image", widget: "image", required: false }
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Hero Heading", name: "hero_heading", widget: "string" }
+          - { label: "Hero Text", name: "hero_text", widget: "text" }
+          - { label: "Philosophy Heading", name: "philosophy_heading", widget: "string" }
+          - { label: "Philosophy Text", name: "philosophy_text", widget: "markdown" }
+          - { label: "Therapy Heading", name: "therapy_heading", widget: "string" }
+          - { label: "Therapy Text", name: "therapy_text", widget: "markdown" }
+          - { label: "Approach Heading", name: "approach_heading", widget: "string" }
+          - { label: "Approach Text", name: "approach_text", widget: "markdown" }
+          - { label: "Expectations Heading", name: "expectations_heading", widget: "string" }
+          - { label: "Expectations Text", name: "expectations_text", widget: "markdown" }
+
+      # SERVICES PAGE
+      - name: "services"
+        label: "Services Page"
+        file: "content/services.json"
+        fields:
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Hero Heading", name: "hero_heading", widget: "string" }
+          - { label: "Hero Text", name: "hero_text", widget: "text" }
+          - { label: "Individual Therapy Heading", name: "therapy_heading", widget: "string" }
+          - { label: "Individual Therapy Text", name: "therapy_text", widget: "markdown" }
+          - { label: "Adults Heading", name: "adults_heading", widget: "string" }
+          - { label: "Adults Text", name: "adults_text", widget: "markdown" }
+          - { label: "Online Heading", name: "online_heading", widget: "string" }
+          - { label: "Online Text", name: "online_text", widget: "markdown" }
+          - { label: "Focus Areas Heading", name: "focus_heading", widget: "string" }
+          - { label: "Focus Areas List", name: "focus_list", widget: "list" }
+
+      # ABOUT PAGE
+      - name: "about"
+        label: "About Page"
+        file: "content/about.json"
+        fields:
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Hero Heading", name: "hero_heading", widget: "string" }
+          - { label: "Hero Text", name: "hero_text", widget: "text" }
+          - { label: "Bio Heading", name: "bio_heading", widget: "string" }
+          - { label: "Bio Text", name: "bio_text", widget: "markdown" }
+
+      # CONTACT PAGE
+      - name: "contact"
+        label: "Contact Page"
+        file: "content/contact.json"
+        fields:
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Hero Heading", name: "hero_heading", widget: "string" }
+          - { label: "Hero Text", name: "hero_text", widget: "text" }
+          - { label: "Calendar Text", name: "calendar_text", widget: "markdown" }
+
+      # Add similar configurations for blog.html, privacy.html, book.html
+
+  # Blog Posts Collection (for future blog posts)
+  - name: "blog_posts"
+    label: "Blog Posts"
+    folder: "content/blog-posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Excerpt", name: "excerpt", widget: "text" }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Content", name: "body", widget: "markdown" }
