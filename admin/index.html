@@ -6,11 +6,26 @@
     <title>Content Manager</title>
     <!-- Load the Netlify Identity script for authentication -->
     <script src="https://identity.netlify.com/v1/netlify-identity.js"></script>
-    <!-- Load Decap CMS (the newer community fork) -->
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </head>
 <body>
-    <!-- This is a common fix for the blank page issue -->
-    <!-- The script is now loaded in the head, so the body can be empty -->
+    <!-- Create a specific element for the CMS to mount to -->
+    <div id="nc-root"></div>
+
+    <!-- Load Decap CMS AFTER the DOM element exists -->
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    
+    <!-- Initialize CMS after everything is loaded -->
+    <script>
+        // Wait for both the page and the CMS script to load
+        window.addEventListener('load', function() {
+            if (typeof CMS !== 'undefined') {
+                console.log('Initializing Decap CMS...');
+                CMS.init();
+                console.log('Decap CMS initialized successfully');
+            } else {
+                console.error('Decap CMS script failed to load');
+            }
+        });
+    </script>
 </body>
 </html>
