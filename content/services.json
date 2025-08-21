@@ -1,12 +1,13 @@
 {
-  "items": [
-    {
-      "name": "Individual Therapy (50 min)",
-      "description": "Online or in-person. We focus on your goals using evidence-based methods."
-    },
-    {
-      "name": "Intake (90 min)",
-      "description": "A deeper first session to map your history, needs, and plan."
-    }
-  ]
+  "title": "Services — InnerCompassPsychology",
+  "hero_heading": "Services",
+  "hero_text": "In-person in Leiden & online across the Netherlands.",
+  "therapy_heading": "Individual Therapy",
+  "therapy_text": "60-minute sessions focused on your goals. Integrative practice with CBT, DBT, psychodynamic therapy, and Motivational Interviewing.",
+  "adults_heading": "Adults (18+)",
+  "adults_text": "I work with adults, and my practice is welcoming to people from diverse cultural, social, and personal backgrounds.",
+  "online_heading": "Online Sessions",
+  "online_text": "Secure video sessions for flexibility and access—especially useful for busy schedules and travel.",
+  "focus_heading": "Focus areas",
+  "focus_list": ["PTSD & trauma", "Anxiety & panic", "Depression", "Mood issues", "ADHD", "Life transitions", "Stress & burnout", "Relationship patterns"]
 }
