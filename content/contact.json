@@ -1,6 +1,6 @@
 {
-  "practice_name": "Inner Compass Psychology",
-  "address": "Rijn en Schiekade 13, 2311 AJ Leiden",
-  "email": "beraiaguram78@gmail.com",
-  "phone": "+31 6 0000 0000"
+  "title": "Book Intro Call — InnerCompassPsychology",
+  "hero_heading": "Book a free 20-minute intro call",
+  "hero_text": "Tell me a bit about what you're looking for. I'll get back to you by email to find a time.",
+  "calendar_text": "## Prefer booking via a calendar link?\n\nYou can plug in a Calendly/Cal.com link later—replace the mailto button above with your scheduling URL in `/contact.html`."
 }
