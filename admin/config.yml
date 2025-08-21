@@ -25,6 +25,7 @@ collections:
             fields:
               - { label: "Quote", name: "quote", widget: "text" }
               - { label: "Attribution", name: "name", widget: "string", required: false }
+
       - file: "content/about.json"
         label: "About"
         name: "about"
@@ -32,6 +33,7 @@ collections:
           - { label: "Headline", name: "headline", widget: "string" }
           - { label: "Bio", name: "bio", widget: "markdown" }
           - { label: "Portrait", name: "portrait", widget: "image", required: false }
+
       - file: "content/services.json"
         label: "Services"
         name: "services"
@@ -43,6 +45,7 @@ collections:
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Description", name: "description", widget: "markdown" }
               - { label: "Price (optional)", name: "price", widget: "string", required: false }
+
   - name: "contactinfo"
     label: "Contact & Practice Info"
     file: "content/contact.json"
