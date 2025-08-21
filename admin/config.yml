@@ -2,12 +2,7 @@ backend:
   name: git-gateway
   branch: main
 
-# This allows you to use the CMS locally on your computer
-local_backend: true
-
-# Media files will be stored in this folder in your repo
 media_folder: "assets/uploads"
-# This path is public, so your website can find the images
 public_folder: "/assets/uploads"
 
 collections:
