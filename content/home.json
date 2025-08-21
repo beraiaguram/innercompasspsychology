@@ -1,16 +1,13 @@
 {
-  "heading": "Real Connection. Real Change.",
-  "subheading": "Counselling Psychologist (NIP) \u2014 Leiden & Online",
-  "intro": "I help adults and teens with PTSD, anxiety, depression, trauma, ADHD, and life transitions. Book a free 20\u2011minute introductory call.",
-  "hero_image": "/assets/uploads/hero.jpg",
-  "testimonials": [
-    {
-      "quote": "From our first session, I felt safe and not judged. Separating thoughts from feelings changed how I cope.",
-      "name": "Anonymous, 28"
-    },
-    {
-      "quote": "I felt heard and practically helped to sort my thoughts. I\u2019m more comfortable being myself.",
-      "name": "Anonymous, 30"
-    }
-  ]
+  "title": "InnerCompassPsychology — Counselling Psychologist",
+  "hero_heading": "Real Connection. Real Change.",
+  "hero_text": "I'm Guram Beraia, a NIP-registered Counselling Psychologist. I work with adults navigating PTSD, anxiety, depression, trauma, ADHD, and life transitions.",
+  "philosophy_heading": "Why \"Inner Compass\"?",
+  "philosophy_text": "The name **Inner Compass** reflects my therapeutic approach: you already carry a reliable sense of direction within you...",
+  "therapy_heading": "Therapy with me",
+  "therapy_text": "Therapy with me isn't a blank slate—it's a real dialogue...",
+  "approach_heading": "Approach",
+  "approach_text": "I work with CBT, DBT, psychodynamic therapy, and Motivational Interviewing...",
+  "expectations_heading": "What to expect",
+  "expectations_text": "- Intro call to understand your goals and fit\n- Clear focus areas and steady pace\n- Homework when useful\n- Online or in-person in Leiden"
 }
